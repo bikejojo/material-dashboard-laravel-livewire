@@ -15,6 +15,7 @@ return new class extends Migration
         Schema::table('personals', function (Blueprint $table) {
             $table->foreign('p')->references('id')->on('users');
         });
+
     }
 
     /**

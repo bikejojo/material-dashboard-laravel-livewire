@@ -7,6 +7,8 @@ use App\Models\Album;
 use App\Models\Evento;
 use App\Models\Personal;
 use App\Models\Producto;
+//---------------------
+use App\Models\_reg;
 
 use Illuminate\Database\Seeder;
 
@@ -92,10 +94,28 @@ Personal::create([
     'Telefono'=>'73158202',
     'estado' => '2',
 ]);
-/*
-Evento::create([]);
-Evento::create([]);
 
+Evento::create([
+        'e'=>'1',
+        'codigo'=>'EVENT001',
+        'FechaRegistro'=>'2022-04-12',
+        'FechaInicio'=>'2022-05-12',
+        'horaInicio'=>'19:09',
+        'horaFin'=>'22:09',
+        'Ubicacion'=>'Av uruguay calle 9 ',
+        'tipo'=>'2',
+]);  // 0 PENDIENDTE 1 EJECUTANDO 2 ACABADO
+Evento::create([
+        'e'=>'2',
+        'codigo'=>'EVENT002',
+        'FechaRegistro'=>'2022-04-12',
+        'FechaInicio'=>'2022-05-12',
+        'horaInicio'=>'19:09',
+        'horaFin'=>'22:09',
+        'Ubicacion'=>'Av uruguay calle 15 ',
+        'tipo'=>'1',
+]);
+/*
 Album::create([]);
 Album::create([]);
 

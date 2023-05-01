@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('eventos', function (Blueprint $table) {
             $table->id('e');
-            $table->bigInteger('codigo');
+            $table->String('codigo');
             $table->date('FechaRegistro');
             $table->date('FechaInicio');
             $table->time('horaInicio');

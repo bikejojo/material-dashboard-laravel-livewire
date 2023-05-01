@@ -57,16 +57,24 @@
                                                     <td class="text-center text-sm font-weight-bold mb-0" > CLIENTE </td>
                                                        @break
                                                    @default
-                                               @endswitch (expresion)
-                                               @switch($u1->Estado)
-                                               @case(0)
-                                               <td class="text-center " ><span class="badge badge-sm bg-gradient-secondary" > LIBRE </span></td>
+                                                @endswitch (expresion)
+                                                @switch($u1->Estado)
+                                                @case(0)
+                                                <td class="text-center " ><span class="badge badge-sm bg-gradient-secondary" > LIBRE </span></td>
                                                    @break
-                                               @case(1)
-                                               <td class="text-center " ><span class="badge badge-sm bg-gradient-success" > OCUPADO </span></td>
+                                                @case(1)
+                                                <td class="text-center " ><span class="badge badge-sm bg-gradient-success" > OCUPADO </span></td>
+                                                   @break
+                                                @case(2)
+                                                <td class="text-center " ><span class="badge badge-sm bg-gradient-success" ></span></td>
                                                    @break
                                                 @default
-                                          @endswitch (expresion)
+                                                @endswitch (expresion)
+                                                <td> <a href="javascript:;"
+                                                    class="text-secondary font-weight-bold text-xs"
+                                                    data-toggle="tooltip" data-original-title="Edit user">
+                                                    Edit
+                                                </a></td>
                                             </tr>
 
                                         @endforeach
