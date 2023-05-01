@@ -7,7 +7,7 @@
                 aria-hidden="true" id="iconSidenav"></i>
                 <a class="navbar-brand m-0 d-flex text-wrap align-items-center" href=" {{ route('dashboard') }} ">
                     <img src="{{ asset('assets') }}/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-                    <span class="ms-1 font-weight-bold text-white">Material Dashboard 2 Laravel Livewire</span>
+                    <span class="ms-1 font-weight-bold text-white"> Bienvenido a Software EventSoft </span>
                 </a>
         </div>
         <hr class="horizontal light mt-0 mb-2">
@@ -45,14 +45,7 @@
                         <span class="nav-link-text me-1">الواقع الافتراضي</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('rtl') }}">
-                        <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons-round opacity-10">format_textdirection_r_to_l</i>
-                        </div>
-                        <span class="nav-link-text me-1">RTL</span>
-                    </a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link " href="{{ route('notifications') }}">
                         <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">
@@ -74,7 +67,7 @@
                         <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons-round opacity-10">login</i>
                         </div>
-                        <span class="nav-link-text me-1">تسجيل الدخول</span>
+
                     </a>
                 </li>
                 <li class="nav-item">
@@ -82,7 +75,7 @@
                         <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons-round opacity-10">assignment</i>
                         </div>
-                        <span class="nav-link-text me-1">اشتراك</span>
+
                     </a>
                 </li>
             </ul>
@@ -100,14 +93,7 @@
         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
             navbar-scroll="true">
             <div class="container-fluid py-1 px-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 ">
-                        <li class="breadcrumb-item text-sm ps-2"><a class="opacity-5 text-dark"
-                                href="javascript:;">لوحات القيادة</a></li>
-                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">RTL</li>
-                    </ol>
-                    <h6 class="font-weight-bolder mb-0">RTL</h6>
-                </nav>
+
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 px-0" id="navbar">
                     <div class="ms-md-auto pe-md-3 d-flex align-items-center">
                         <div class="input-group input-group-outline">

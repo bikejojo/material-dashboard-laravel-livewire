@@ -3,7 +3,9 @@
 namespace App\Http\Livewire\Auth;
 
 use Illuminate\Validation\ValidationException;
+use Laravel\Passport\HasApiTokens;
 use Livewire\Component;
+
 
 class Login extends Component
 {
@@ -23,10 +25,10 @@ class Login extends Component
     }
 
     public function mount() {
-      
-        $this->fill(['email' => 'admin@material.com', 'password' => 'secret']);    
+
+        $this->fill(['email' => 'admin@material.com', 'password' => 'secret']);
     }
-    
+
     public function store()
     {
         $attributes = $this->validate();
@@ -39,7 +41,7 @@ class Login extends Component
 
         session()->regenerate();
 
-        return redirect('/dashboard');
+        return redirect('/user-profile');
 
     }
 }
