@@ -15,7 +15,9 @@ return new class extends Migration
         Schema::table('personals', function (Blueprint $table) {
             $table->foreign('p')->references('id')->on('users');
         });
-
+        Schema::table('eventos', function (Blueprint $table) {
+            $table->foreign('pe')->references('p')->on('personals');
+        });
     }
 
     /**

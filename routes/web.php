@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventoController;
 use App\Http\Livewire\Auth\ForgotPassword;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\Register;
@@ -56,4 +57,7 @@ Route::get('static-sign-in', StaticSignIn::class)->name('static-sign-in');
 Route::get('static-sign-up', StaticSignUp::class)->name('static-sign-up');
 Route::get('rtl', RTL::class)->name('rtl');
 Route::get('event',Event::class)->name('event');
+Route::post('event/store',[EventoController::class, 'store'])->name('event.store');
 });
+
+

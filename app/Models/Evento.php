@@ -11,11 +11,13 @@ class Evento extends Model
     protected $primarykey = "e";
     protected $fillable = [
        'codigo',
+       'asunto',
         'FechaRegistro',
         'FechaInicio',
         'horaInicio',
         'horaFin',
         'Ubicacion',
         'tipo',
+        'pe',
     ];
 }

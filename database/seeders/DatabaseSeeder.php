@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
 
 Personal::create([
     'p'=>'1',
-    'Codigo'=>'ADM001',
+    'Codigo'=>'ADM',
     'Nombre'=>'Ricardo',
     'Apellido'=>'Martinez',
     'FechaN'=>'2023-05-11',
@@ -69,7 +69,7 @@ Personal::create([
 ]);
 Personal::create([
     'p'=>'2',
-    'Codigo'=>'ORG001',
+    'Codigo'=>'ORG',
     'Nombre'=>'Jorge',
     'Apellido'=>'Cari',
     'FechaN'=>'2022-07-10',
@@ -78,7 +78,7 @@ Personal::create([
 ]);
 Personal::create([
     'p'=>'3',
-    'Codigo'=>'FOT001',
+    'Codigo'=>'FOT',
     'Nombre'=>'Eduardo',
     'Apellido'=>'Araca',
     'FechaN'=>'2022-07-10',
@@ -87,7 +87,7 @@ Personal::create([
 ]);
 Personal::create([
     'p'=>'4',
-    'Codigo'=>'CLI001',
+    'Codigo'=>'CLI',
     'Nombre'=>'Belen',
     'Apellido'=>'Cari',
     'FechaN'=>'2022-12-22',
@@ -98,22 +98,26 @@ Personal::create([
 Evento::create([
         'e'=>'1',
         'codigo'=>'EVENT001',
+        'asunto'=>'FIESTA DE 15 AÑOS',
         'FechaRegistro'=>'2022-04-12',
         'FechaInicio'=>'2022-05-12',
         'horaInicio'=>'19:09',
         'horaFin'=>'22:09',
         'Ubicacion'=>'Av uruguay calle 9 ',
         'tipo'=>'2',
+        'pe'=>'2',
 ]);  // 0 PENDIENDTE 1 EJECUTANDO 2 ACABADO
 Evento::create([
         'e'=>'2',
         'codigo'=>'EVENT002',
+        'asunto'=>'GRADUACION',
         'FechaRegistro'=>'2022-04-12',
         'FechaInicio'=>'2022-05-12',
         'horaInicio'=>'19:09',
         'horaFin'=>'22:09',
         'Ubicacion'=>'Av uruguay calle 15 ',
-        'tipo'=>'1',
+        'tipo'=>'0',
+        'pe'=>'2',
 ]);
 /*
 Album::create([]);
