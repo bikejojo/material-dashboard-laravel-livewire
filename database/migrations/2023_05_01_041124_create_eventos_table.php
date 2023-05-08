@@ -20,8 +20,9 @@ return new class extends Migration
             $table->time('horaInicio');
             $table->time('horaFin');
             $table->String('Ubicacion');
-            $table->boolean('tipo');
+            $table->bigInteger('tipo');
             $table->unsignedBigInteger('pe');
+            $table->unsignedBigInteger('id')->nullable();
             $table->timestamps();
         });
     }

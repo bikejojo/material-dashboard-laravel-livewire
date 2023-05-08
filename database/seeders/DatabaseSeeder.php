@@ -65,7 +65,7 @@ Personal::create([
     'Apellido'=>'Martinez',
     'FechaN'=>'2023-05-11',
     'Telefono'=>'775013545',
-    'estado' => '0',
+    'Estado' => '0',
 ]);
 Personal::create([
     'p'=>'2',
@@ -74,7 +74,7 @@ Personal::create([
     'Apellido'=>'Cari',
     'FechaN'=>'2022-07-10',
     'Telefono'=>'79836202',
-    'estado' => '0',
+    'Estado' => '0',
 ]);
 Personal::create([
     'p'=>'3',
@@ -83,7 +83,7 @@ Personal::create([
     'Apellido'=>'Araca',
     'FechaN'=>'2022-07-10',
     'Telefono'=>'79836201',
-    'estado' => '0',
+    'Estado' => '0',
 ]);
 Personal::create([
     'p'=>'4',
@@ -92,7 +92,7 @@ Personal::create([
     'Apellido'=>'Cari',
     'FechaN'=>'2022-12-22',
     'Telefono'=>'73158202',
-    'estado' => '2',
+    'Estado' => '2',
 ]);
 
 Evento::create([

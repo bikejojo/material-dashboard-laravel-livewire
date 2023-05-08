@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('Apellido');
             $table->date('FechaN');
             $table->bigInteger('Telefono');
-            $table->boolean('Estado');
+            $table->bigInteger('Estado');
+            $table->unsignedBigInteger('id')->nullable();
             $table->timestamps();
         });
     }

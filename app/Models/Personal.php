@@ -15,5 +15,6 @@ class Personal extends Model
     'Apellido',
     'FechaN',
     'Telefono',
+    'Estado',
     ];
 }
