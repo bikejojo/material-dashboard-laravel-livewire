@@ -33,8 +33,17 @@
                     <span class="nav-link-text ms-1">Eventos</span>
                 </a>
             </li>
+            <li style="display:none;" class="nav-item"  >
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'eventup' ? ' active bg-gradient-primary' : '' }}"
+                 href="{{route('eventup',['id'])}}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">assignment</i>
+                    </div>
+                    <span class="nav-link-text ms-1">eventup</span>
+                </a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'user-management' ? ' active bg-gradient-primary' : '' }} "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'user-management' ? ' acive bg-gradient-primary' : '' }} "
                     href="{{ route('user-management') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
@@ -48,7 +57,7 @@
             <li class="nav-item">
                 <a class="nav-link text-white {{ Route::currentRouteName() == 'dashboard' ? ' active bg-gradient-primary' : '' }} "
                     href="{{ route('dashboard') }}">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <div class="text-white text-center me-2 d-flex align-itetms-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
                     </div>
                     <span class="nav-link-text ms-1">Dashboard</span>
@@ -60,7 +69,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
                     </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">Suscripciones</span>
                 </a>
             </li>
             <li class="nav-item">

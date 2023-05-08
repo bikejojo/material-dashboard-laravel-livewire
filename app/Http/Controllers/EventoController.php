@@ -6,34 +6,47 @@ use Illuminate\Http\Request;
 use App\Models\Personal;
 use App\Models\Evento;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use App\Http\Controllers\Post;
+use Illuminate\Support\Facades\DB;
+
 
 use Carbon\Carbon;
 class EventoController extends Controller
 {
     //
     public function index(){
-        $even = Evento::select('personals.*','eventos.*')
+        $event = Evento::select('personals.*','eventos.*')
         ->join('personals','personals.p','=','eventos.pe')
         ->get();
-        return view('livewire.event',compact('even'));
+        return view('livewire.event',compact('event'));
     }
 
     public function store(Request $request){
 
+        $fecha_actual = Carbon::now();
         $evento = new Evento();
         $evento->codigo = 'EVENT';
-        $evento->asunto = $request->input('campo1');
-        $evento->FechaRegistro = Carbon::now()->format('d/m/Y');
-        $evento->FechaInicio = $request->input('campo2');
-        $evento->horaInicio = $request->input('campo3');
-        $evento->horaFin = $request->input('campo4');
-        $evento->Ubicacion = $request->input('campo5');
+        $evento->asunto = $request->input('asunto');
+        $evento->FechaRegistro = $fecha_actual->format('Y-m-d');
+        $evento->FechaInicio = $request->input('FechaInicio');
+        $evento->horaInicio = $request->input('horaInicio');
+        $evento->horaFin = $request->input('horaFin');
+        $evento->Ubicacion = $request->input('Ubicacion');
         $evento->tipo = 0;
+        $evento->pe = 2;
         $evento->save();
+        return redirect(route('event'));
+        //return view('livewire.event');
+    }
 
-        session()->flash('message', 'Evento creado con éxito.');
+    public function show($request){
 
-       return redirect(route('event'));
+        $eve['eve']=Evento::find($request);
+        //return dd($eve);
+        //$b=$request->input('eve');
+        //return dd($b);
+        return view('livewire.eventup',$eve);
 
     }
 

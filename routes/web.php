@@ -9,6 +9,7 @@ use App\Http\Livewire\Billing;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\Event;
+use App\Http\Livewire\Eventup;
 use App\Http\Livewire\ExampleLaravel\UserManagement;
 use App\Http\Livewire\ExampleLaravel\UserProfile;
 use App\Http\Livewire\Notifications;
@@ -57,7 +58,9 @@ Route::get('static-sign-in', StaticSignIn::class)->name('static-sign-in');
 Route::get('static-sign-up', StaticSignUp::class)->name('static-sign-up');
 Route::get('rtl', RTL::class)->name('rtl');
 Route::get('event',Event::class)->name('event');
-Route::post('event/store',[EventoController::class, 'store'])->name('event.store');
+Route::get('eventup/{id}', Eventup::class)->name('eventup');
+Route::post('event',[EventoController::class, 'store'])->name('event.store');
+Route::get('/eventup/{e}',[EventoController::class, 'show'])->name('event.show');
 });
 
 
