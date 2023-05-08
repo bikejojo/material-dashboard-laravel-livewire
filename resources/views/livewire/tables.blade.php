@@ -31,10 +31,10 @@
                                     <p class="text-xl text-center font-bold text-blue-600">Basic</p>
                                     <p class="text-center py-4">
                                         <span class="text-4xl font-bold text-gray-700">
-                                            $<span x-text="basicPrice">19/mes</span>
+                                            $<span x-text="basicPrice">5/mes</span>
                                         </span>
                                     </p>
-                                    <ul class="border-t border-gray-60 py-4 space-y-600" >
+                                    <ul class="border-t border-gray-300 py-4 space-y-6" >
                                         <li class="flex items-center space-x-2 px-2">
                                             <span class="bg-blue-600 rounded-full p-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
@@ -42,8 +42,6 @@
                                             </span>
                                             <span class="text-gray-60 capitalize">Productos Garantizados</span>
                                         </li>
-                                    </ul>
-                                    <ul class="border-t border-gray-60 py-4 space-y-600" >
                                         <li class="flex items-center space-x-2 px-2">
                                             <span class="bg-blue-600 rounded-full p-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
@@ -51,14 +49,29 @@
                                             </span>
                                             <span class="text-gray-60 capitalize">Atencion 24Hrs</span>
                                         </li>
-                                    </ul>
-                                    <ul class="border-t border-gray-60 py-4 space-y-600" >
                                         <li class="flex items-center space-x-2 px-2">
                                             <span class="bg-blue-600 rounded-full p-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-60 capitalize">Almacenamiento Ilimitado de Fotos</span>
+                                            <span class="text-gray-60 capitalize">Almacenamiento Limitado</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-gray-300 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-400 capitalize">Reservas Virtuales</span>
+                                        </li>
+
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-gray-300 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-400 capitalize">App Movil</span>
                                         </li>
                                     </ul>
                                     <div class="flex items-center justify-center mt-6">
@@ -67,15 +80,57 @@
                                 </div>
                                 <div class="bg-white shadow-2xl rounded-lg py-4">
                                     <p class="text-xl text-center font-bold text-blue-600">Premium</p>
-                                    <p class="text-center py-8">
+                                    <p class="text-center py-4">
                                         <span class="text-4xl font-bold text-gray-700">
-                                            $<span x-text="premiumPrice">29</span>
-                                        </span>
-                                        <span class="text-xs uppercase text-gray-500">
-                                            / <span x-text="billingType">mes</span>
+                                            $<span x-text="premiumPrice">15/mes</span>
                                         </span>
                                     </p>
-                                    <ul class="border-t border-gray-200 py-8 space-y-6" >
+                                    <ul class="border-t border-gray-200 py-4 space-y-6" >
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Productos Garantizados</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Atencion 24Hrs</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Almacenamiento Ilimitado</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">App Movil</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Reservas Virtuales</span>
+                                        </li>
+
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-gray-300 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-400 capitalize">Mantenimiento de servicios</span>
+                                        </li>
+
                                     </ul>
                                     <div class="flex items-center justify-center mt-6">
                                         <a href="#" class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150" title="Purchase">PAGO</a>
@@ -83,15 +138,68 @@
                                 </div>
                                 <div class="bg-white shadow-2xl rounded-lg py-4">
                                     <p class="text-xl text-center font-bold text-blue-600">Pro</p>
-                                    <p class="text-center py-8">
+                                    <p class="text-center py-4">
                                         <span class="text-4xl font-bold text-gray-700">
-                                            $<span x-text="proPrice">39</span>
-                                        </span>
-                                        <span class="text-xs uppercase text-gray-500">
-                                            / <span x-text="billingType">mes</span>
+                                            $<span x-text="proPrice">39/mes</span>
                                         </span>
                                     </p>
-                                    <ul class="border-t border-gray-200 py-8 space-y-6" >
+                                    <ul class="border-t border-gray-200 py-4 space-y-6" >
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Productos Garantizados</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Atencion 24Hrs</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Almacenamiento Ilimitado</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">App Movil</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Reservas Virtuales</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Asistencia Total</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Re-Agendar Eventos</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2 px-2">
+                                            <span class="bg-blue-600 rounded-full p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                </svg>
+                                            </span>
+                                            <span class="text-gray-60 capitalize">Eleccion de Equipo Fotografico</span>
+                                        </li>
                                     </ul>
                                     <div class="flex items-center justify-center mt-6">
                                         <a href="#" class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150" title="Purchase">PAGO</a>
