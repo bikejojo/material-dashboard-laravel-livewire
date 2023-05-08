@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
 Personal::create([
-    'p'=>'1',
+    
     'Codigo'=>'ADM',
     'Nombre'=>'Ricardo',
     'Apellido'=>'Martinez',
@@ -68,7 +68,7 @@ Personal::create([
     'Estado' => '0',
 ]);
 Personal::create([
-    'p'=>'2',
+
     'Codigo'=>'ORG',
     'Nombre'=>'Jorge',
     'Apellido'=>'Cari',
@@ -77,7 +77,7 @@ Personal::create([
     'Estado' => '0',
 ]);
 Personal::create([
-    'p'=>'3',
+
     'Codigo'=>'FOT',
     'Nombre'=>'Eduardo',
     'Apellido'=>'Araca',
@@ -96,7 +96,7 @@ Personal::create([
 ]);
 
 Evento::create([
-        'e'=>'1',
+
         'codigo'=>'EVENT001',
         'asunto'=>'FIESTA DE 15 AÑOS',
         'FechaRegistro'=>'2022-04-12',
@@ -108,7 +108,7 @@ Evento::create([
         'pe'=>'2',
 ]);  // 0 PENDIENDTE 1 EJECUTANDO 2 ACABADO
 Evento::create([
-        'e'=>'2',
+
         'codigo'=>'EVENT002',
         'asunto'=>'GRADUACION',
         'FechaRegistro'=>'2022-04-12',
