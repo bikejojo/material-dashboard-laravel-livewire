@@ -35,7 +35,7 @@
             </li>
             <li style="display:none;" class="nav-item"  >
                 <a class="nav-link text-white {{ Route::currentRouteName() == 'eventup' ? ' active bg-gradient-primary' : '' }}"
-                 href="{{route('eventup',['id'])}}">
+                 href="{{route('eventup')}}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">assignment</i>
                     </div>

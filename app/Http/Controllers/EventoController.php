@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Post;
 use Illuminate\Support\Facades\DB;
 
-
 use Carbon\Carbon;
 class EventoController extends Controller
 {
@@ -58,13 +57,31 @@ class EventoController extends Controller
         //return view('livewire.event');
     }
 
-    public function show($request){
+    public function show(){
+        $fecha_actual = Carbon::now();
+        $fe= $fecha_actual->format('Y-m-d');
+       /* $eve=Evento::select('eventos.tipo','personals.Estado')
+        ->where('eventos.FechaInicio','=',$fe)
+        ->join('personals','personals.p','=','eventos.pe');
+        $eve->tipo = 1 ;
+        $eve->Estado=1;
+        $eve->update();*/
 
-        $eve['eve']=Evento::find($request);
-        //return dd($eve);
-        //$b=$request->input('eve');
-        //return dd($b);
-        return view('livewire.eventup',$eve);
+        \App\Models\Evento::where('FechaInicio',$fe)
+        ->update([
+            'eventos.tipo' => 1,
+        ]);
+
+        return redirect(route('event'));
+    }
+    public function show1(){
+        $fecha_actual = Carbon::now();
+        $fe= $fecha_actual->format('Y-m-d');
+        \App\Models\Evento::where('FechaInicio',$fe)
+        ->update([
+            'eventos.tipo' => 2,
+        ]);
+        return redirect(route('event'));
 
     }
 

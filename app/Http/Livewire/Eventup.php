@@ -19,14 +19,6 @@ class Eventup extends Component
    private $a;
    private $o;
 
-
-    public function showt($id)
-   {
-            $eve= Evento::where('eventos.e','=',$id)->get();
-            //return dd($eve);
-            $this->redirect('eventup/',['e'=> $eve]);
-    }
-
  public function render()
    {
         return view ('livewire.eventup');

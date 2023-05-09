@@ -58,9 +58,10 @@ Route::get('static-sign-in', StaticSignIn::class)->name('static-sign-in');
 Route::get('static-sign-up', StaticSignUp::class)->name('static-sign-up');
 Route::get('rtl', RTL::class)->name('rtl');
 Route::get('event',Event::class)->name('event');
-Route::get('eventup/{id}', Eventup::class)->name('eventup');
+Route::get('eventup', Eventup::class)->name('eventup');
 Route::post('event',[EventoController::class, 'store'])->name('event.store');
-Route::get('/eventup/{e}',[EventoController::class, 'show'])->name('event.show');
+Route::get('evente',[EventoController::class, 'show'])->name('event.show');
+Route::get('evente1',[EventoController::class, 'show1'])->name('event.show1');
 });
 
 
