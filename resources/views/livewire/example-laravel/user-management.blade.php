@@ -63,7 +63,7 @@
                                                 <td class="text-center " ><span class="badge badge-sm bg-gradient-secondary" > LIBRE </span></td>
                                                    @break
                                                 @case(1)
-                                                <td class="text-center " ><span class="badge badge-sm bg-gradient-success" > OCUPADO </span></td>
+                                                <td class="text-center " ><span class="badge badge-sm bg-gradient-success" > OCUPADOLIBRE  </span></td>
                                                    @break
                                                 @case(2)
                                                 <td class="text-center " ><span class="badge badge-sm bg-gradient-success" ></span></td>

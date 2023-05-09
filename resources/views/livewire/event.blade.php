@@ -68,6 +68,16 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" name="Ubicacion" id="Ubicacion">
             </div>
+
+            <div class="form-group">
+                <label for="name" class="form-label">NOMBRE de Fotografo </label>
+                <select name="empleado" id="empleado"  class="form-control,width:100px" required="required">
+                    <option>--------BUSCA NOMBRE CLIENTE--------<></option>
+                    @foreach ($event1 as $event1 )
+                        <option value={{ $event1['p'] }} > {{ $event1['Nombre']}}.{{ $event1['Apellido']}}</option>
+                    @endforeach
+                </select>
+            </div>
             <!-- etc -->
 
           <button type="submit" class="btn btn-primary" >Guardar</button>
@@ -95,6 +105,12 @@
                                         <th
                                             class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                             Hora Fin</th>
+
+                                        <th
+                                            class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                            Ubicacion</th>
+                                        <th class="text-secondary opacity-7"></th>
+
                                         <th
                                             class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                             Author</th>
@@ -124,6 +140,7 @@
                                        @endswitch (expresion)
                                        <td class="text-center text-sm font-weight-bold mb-0"> {{$ev1->horaInicio}}  </td>
                                        <td class="text-center text-sm font-weight-bold mb-0"> {{$ev1->horaFin}}  </td>
+                                       <td class="text-center text-sm font-weight-bold mb-0"> {{$ev1->Ubicacion}}  </td>
                                        <td class="text-center text-sm font-weight-bold mb-0"> {{$ev1->Nombre }} {{$ev1->Apellido}}  </td>
                                        <td class="text-center text-sm font-weight-bold mb-0">
                                         <a id ="btnAgregarEvento1" class="btn bg-gradient-dark mb-0" href="{{route('eventup',['id'=> $ev1->e])}}" data-target="a">
