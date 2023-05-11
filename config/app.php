@@ -169,7 +169,7 @@ return [
         Laravel\Passport\PassportServiceProvider::class,
         Illuminate\Notifications\NotificationServiceProvider::class,
         //VonageChannelServiceProvider::class,
-        Aws\Laravel\AwsServiceProvider::class,
+        //Aws\Laravel\AwsServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -241,7 +241,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'AWS' => Aws\Laravel\AwsFacade::class
+        //'AWS' => Aws\Laravel\AwsFacade::class
 
 
     ],
