@@ -22,8 +22,8 @@ class SuscripcionController extends Controller
 //        $date = $date->format('Y-m-d');
 
         $s=new Suscripcion();
-        $s=Suscripcion::find($request->cod);
-        $s->fechasuscripcion = $date->addYear(1) ;
+        $s=Suscripcion::where('condinscripcion','=',$request->cod);
+        $s->fechasuscripcion = '2025-05-29' ;
         $s->update();
 
         return view('livewire.table');

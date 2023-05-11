@@ -168,7 +168,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
         Illuminate\Notifications\NotificationServiceProvider::class,
-        VonageChannelServiceProvider::class,
+        //VonageChannelServiceProvider::class,
         Aws\Laravel\AwsServiceProvider::class,
 
         /*
