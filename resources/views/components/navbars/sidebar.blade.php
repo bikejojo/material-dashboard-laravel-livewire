@@ -33,15 +33,7 @@
                     <span class="nav-link-text ms-1">Eventos</span>
                 </a>
             </li>
-            <li style="display:none;" class="nav-item"  >
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'eventup' ? ' active bg-gradient-primary' : '' }}"
-                 href="{{route('eventup')}}">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">assignment</i>
-                    </div>
-                    <span class="nav-link-text ms-1">eventup</span>
-                </a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link text-white {{ Route::currentRouteName() == 'user-management' ? ' acive bg-gradient-primary' : '' }} "
                     href="{{ route('user-management') }}">
@@ -49,6 +41,25 @@
                         <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
                     </div>
                     <span class="nav-link-text ms-1">Manejo de Empleados </span>
+                </a>
+            </li>
+
+            <li class="nav-item"  >
+                <a style="display:none" class="nav-link text-white {{ Route::currentRouteName() == 'personal' ? ' active bg-gradient-primary' : '' }}"
+                href="{{ url('personal') }}" >
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">personal</span>
+                </a>
+            </li>
+            <li class="nav-item"  >
+                <a style="display:none" class="nav-link text-white {{ Route::currentRouteName() == 'susc' ? ' active bg-gradient-primary' : '' }}"
+                href="{{ url('susc') }}" >
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">suscrip</span>
                 </a>
             </li>
             <li class="nav-item mt-3">
@@ -86,7 +97,7 @@
                 <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'profile' ? ' active bg-gradient-primary' : '' }}  "
+                <a style="display:none" class="nav-link text-white {{ Route::currentRouteName() == 'profile' ? ' active bg-gradient-primary' : '' }}  "
                     href="{{ route('profile') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">person</i>

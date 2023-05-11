@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Notifications\VonageChannelServiceProvider;
+
 return [
 
     'hour' => env('SCHEDULED_HOUR', ''),
@@ -165,6 +167,9 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
+        Illuminate\Notifications\NotificationServiceProvider::class,
+        VonageChannelServiceProvider::class,
+        Aws\Laravel\AwsServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -218,6 +223,9 @@ return [
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
+
+        'Notification' => Illuminate\Support\Facades\Notification::class,
+
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'RateLimiter' => Illuminate\Support\Facades\RateLimiter::class,
@@ -233,6 +241,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'AWS' => Aws\Laravel\AwsFacade::class
+
 
     ],
 

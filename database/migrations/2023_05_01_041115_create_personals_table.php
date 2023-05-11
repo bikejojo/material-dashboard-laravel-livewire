@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('FechaN');
             $table->bigInteger('Telefono');
             $table->bigInteger('Estado');
+            $table->String('imagen')->nullable();
             $table->unsignedBigInteger('id')->nullable();
             $table->timestamps();
         });

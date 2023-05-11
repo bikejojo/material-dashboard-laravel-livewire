@@ -41,7 +41,8 @@
                                         @foreach ($u as $u1 )
                                             <tr class="row100 head" >
                                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" scope="row">{{ $loop->iteration }} </th>
-                                               <td> <p class="text-sm font-weight-bold mb-0"> {{$u1->Nombre}} . {{$u1->Apellido}} </p></td>
+                                               <td> <p class="text-sm font-weight-bold mb-0"> {{$u1->Nombre}} . {{$u1->Apellido}} </p>
+                                                </td>
                                                <td class="text-center text-sm font-weight-bold mb-0">  {{$u1->email}}  </td>
                                                @switch($u1->rol)
                                                     @case(0)
@@ -72,9 +73,11 @@
                                                 @endswitch (expresion)
                                                 <td> <a href="javascript:;"
                                                     class="text-secondary font-weight-bold text-xs"
-                                                    data-toggle="tooltip" data-original-title="Edit user">
+                                                    data-bs-toggle="modal" data-bs-target="#myModal" >
                                                     Edit
-                                                </a></td>
+                                                </a>
+                                            </td>
+                                                  <!-- The Modal -->
                                             </tr>
 
                                         @endforeach

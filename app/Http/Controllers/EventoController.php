@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Notification;
+
 use Illuminate\Http\Request;
+use App\Notifications\SMSNotification;
 use App\Models\Personal;
 use App\Models\Evento;
 use App\Models\User;
@@ -12,6 +15,11 @@ use App\Http\Controllers\Post;
 use Illuminate\Support\Facades\DB;
 
 use Carbon\Carbon;
+use Illuminate\Notifications\Events\NotificationSent;
+use Illuminate\Notifications\Notification as NotificationsNotification;
+use Illuminate\Support\Facades\Notification as FacadesNotification;
+use Vonage\Voice\Webhook\Notification as WebhookNotification;
+
 class EventoController extends Controller
 {
     //
@@ -82,7 +90,20 @@ class EventoController extends Controller
             'eventos.tipo' => 2,
         ]);
         return redirect(route('event'));
-
     }
 
+    public function send(){
+        $user = User::find(2)->firs();
+
+        $project = [
+            'greeting' => 'Hi '.$user->name.',',
+            'body' => 'This is the project assigned to you.',
+            'thanks' => 'Thank you this is from codeanddeploy.com',
+            'actionText' => 'View Project',
+            'actionURL' => url('/'),
+            'id' => 57
+        ];
+        //Notification::send($user , new SMSNotification($project));
+
+    }
 }

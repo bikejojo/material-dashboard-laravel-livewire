@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Notifications\Notification;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable implements MustVerifyEmail
@@ -17,6 +18,8 @@ class User extends Authenticatable implements MustVerifyEmail
      *
      * @var string[]
      */
+    use Notifiable;
+
     protected $fillable = [
         'name',
         'email',
@@ -51,4 +54,9 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function routeNotificationForVonage()
+    {
+        return $this->phone;
+    }
 }

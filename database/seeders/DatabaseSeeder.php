@@ -7,6 +7,7 @@ use App\Models\Album;
 use App\Models\Evento;
 use App\Models\Personal;
 use App\Models\Producto;
+use App\Models\Suscripcion;
 //---------------------
 use App\Models\_reg;
 
@@ -59,7 +60,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
 Personal::create([
-    
+
     'Codigo'=>'ADM',
     'Nombre'=>'Ricardo',
     'Apellido'=>'Martinez',
@@ -118,6 +119,19 @@ Evento::create([
         'Ubicacion'=>'Av uruguay calle 15 ',
         'tipo'=>'0',
         'pe'=>'2',
+]);
+
+Suscripcion::create([
+    'fechasuscripcion'=>'2030-05-12',
+]);
+Suscripcion::create([
+    'fechasuscripcion'=>'2023-05-10',
+]);
+Suscripcion::create([
+    'fechasuscripcion'=>'2030-05-10',
+]);
+Suscripcion::create([
+    'fechasuscripcion'=>'2030-05-10',
 ]);
 /*
 Album::create([]);

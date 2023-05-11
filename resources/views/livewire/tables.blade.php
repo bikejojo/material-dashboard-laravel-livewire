@@ -75,7 +75,8 @@
                                         </li>
                                     </ul>
                                     <div class="flex items-center justify-center mt-6">
-                                        <a href="#" class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150" title="Purchase">PAGO</a>
+                                        <a href="{{ route('profile') }}" class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+                                        title="Purchase">PAGO</a>
                                     </div>
                                 </div>
                                 <div class="bg-white shadow-2xl rounded-lg py-4">

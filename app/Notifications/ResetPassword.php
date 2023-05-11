@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use Illuminate\Notifications\Messages\DatabaseMessage;
 
 use Illuminate\Support\Facades\URL;
 
@@ -13,6 +14,7 @@ class ResetPassword extends Notification
 {
     use Queueable;
     public $token;
+    public $invoice;
 
     /**
      * Create a new notification instance.
@@ -63,7 +65,10 @@ class ResetPassword extends Notification
     public function toArray($notifiable)
     {
         return [
+            'invoice_id' => $this->invoice->id,
+            'amount' => $this->invoice->amount,
             //
         ];
     }
+
 }

@@ -16,5 +16,6 @@ class Personal extends Model
     'FechaN',
     'Telefono',
     'Estado',
+    'imagen',
     ];
 }
