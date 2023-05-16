@@ -26,7 +26,7 @@ class SuscripcionController extends Controller
         $s->fechasuscripcion = '2025-05-29' ;
         $s->update();
 
-        return view('livewire.table');
+        return redirect(route('profile'));
     }
 
     public function pago2($request){

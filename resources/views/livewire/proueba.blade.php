@@ -24,7 +24,6 @@
                     <a href="/public/assets/img/pagodef.png" download ="documento.pdf"> Por Favor Haga Link en este Enlace </a>
             </div>
             <div class="text-center p-4 pt-0" >
-            <a class="btn btn-outline-dark mt-auto" href="" type="submit" ></a>Guardaaaaaaaaa
           </form>
 
         </div>

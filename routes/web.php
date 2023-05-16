@@ -73,9 +73,9 @@ Route::get('personal', PersonalUp::class)->name('personal');
 Route::post('event',[EventoController::class, 'store'])->name('event.store');
 Route::get('evente',[EventoController::class, 'show'])->name('event.show');
 Route::get('evente1',[EventoController::class, 'show1'])->name('event.show1');
-Route::get('susc',[Suscri::class])->name('susc');
-Route::post('susc',[SuscripcionController::class,'pago1'])->name('suscri.store');
-
+//Route::get('susc',[Suscri::class])->name('susc');
+Route::post('susc1',[SuscripcionController::class,'pago1'])->name('suscri.store');
+Route::view('prueba-','proueba')->name('pruebita');
 });
 
 
